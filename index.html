@@ -12,28 +12,52 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <!-----------------------------------Navbar---------------------------------->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo amber-text">Logo</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="fab fa-whatsapp"></i></a>
+                <ul class="right hide-on-med-and-down table-of-contents">
+                    <li><a href="#about" class="amber-text">About</a></li>
+                    <li><a href="#skills" class="amber-text">Skills</a></li>
+                    <li><a href="#work" class="amber-text">Work</a></li>
+                    <li><a href="#contact" class="amber-text">Contact</a></li>
+                </ul>
+                <ul class="side-nav table-of-contents" id="mobile-demo">
+                    <li><a href="#about" class="amber-text">About</a></li>
+                    <li><a href="#skills" class="amber-text">Skills</a></li>
+                    <li><a href="#work" class="amber-text">Work</a></li>
+                    <li><a href="#contact" class="amber-text">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
     <!------------------------------------About section---------------------------->
-    <section>
-        <h4>Hi, I am Mariusz.</h4>
-        <p>I'm a web designer / developer based in Cork, Ireland. I have a passion for web design and love to create for web and
-            mobile devices.</p>
-        <br>
-        <h6>WHAT DO I DO?</h6>
-        <p>I'm skilled Full Stack Developer with a wealth of diverse life and technical experience that I bring to every
-            project.</p>
-        <h6>HOW DO I DO IT?</h6>
-        <p>I follow form as well as function. I know that the aesthetics of effective design combined with application speed,
-            security and raliability combine to create a great user experience.</p>
-        <h6>WHY HIRE ME?</h6>
-        <p></p>I work quickly and effectively in getting things built and working across the stack. I'm an excellent
-        communicator who
-        thrives in bright and enthusiastic teams and I'm also a self starter when working solo.</p>
+    <section id="about" class="section scrollspy">
+        <div class="container">
+            <h4>Hi, I am Mariusz.</h4>
+            <p class="intro">I'm a web designer / developer based in Cork, Ireland. I have a passion for web design and love to create for web and
+                mobile devices.</p>
+            <br>
+            <h6><i class="fas fa-question"></i>WHAT DO I DO?</h6>
+            <p>I'm skilled Full Stack Developer with a wealth of diverse life and technical experience that I bring to every
+                project. </p>
+            <h6><i class="far fa-thumbs-up"></i>HOW DO I DO IT?</h6>
+            <p>I follow form as well as function. I know that the aesthetics of effective design combined with application speed,
+                security and raliability combine to create a great user experience.</p>
+            <h6><i class="fas fa-bolt"></i>WHY HIRE ME?</h6>
+            <p></p>I work quickly and effectively in getting things built and working across the stack. I'm an excellent
+            communicator who
+            thrives in bright and enthusiastic teams and I'm also a self starter when working solo.</p>
+        </div>
     </section>
 
     <!------------------------------------Skills section---------------------------->
-    <section>
+    <section id="skills" class="section scrollspy">
         <div class="container">
             <h5 class="center-align">My Skills</h5>
+            <p class="intro">As a full stack web developer I can develop both client and server software.</p>
 
             <div class="row">
                 <div class="col s12">
@@ -104,8 +128,8 @@
     <section></section>
 
     <!------------------------------------Contact section---------------------------->
-    <section>
-        <div class="container">
+    <section id="contact" class="section scrollspy">
+        <div class="container center">
             <h5>Have project in mind?</h5>
             <p>I am currently available for freelance work.
             I would love to hear from you!</p>
@@ -147,5 +171,17 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () { 
+            $('.button-collapse').sideNav({
+                menuWidth: 300,
+                closeOnClick: true,
+                edge: 'right', 
+            }
+            );
+            $('.collapsible').collapsible();
+             $('.scrollspy').scrollSpy();
+        });
+    </script>
 </body>
 </html>

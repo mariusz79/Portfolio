@@ -1,3 +1,38 @@
+/*navbar*/
+nav{
+    background-color: #bdd9dc33;
+}
+
+.table-of-contents a.active {
+    font-weight: 500;
+    border-left: none;
+    border-bottom: 2px solid #ee6e73;
+}
+
+.table-of-contents a:hover {
+    font-weight: 500;
+    border-left: none;
+    border-bottom: 2px solid #b1a9a9;
+}
+
+/*sections colors*/
+section:nth-of-type(1) {
+  background: rgb(247, 245, 245);
+}
+section:nth-of-type(2) {
+  background: rgb(238, 96, 207);
+}
+section:nth-of-type(3) {
+  background: red;
+}
+section:nth-of-type(4) {
+  background: rgb(0, 255, 195);
+}
+
+/*about section*/
+.intro{
+    font-size: 16px;
+}
 /*progress bars*/
 .progress-section {
   margin: 0px 20px;
@@ -75,3 +110,4 @@
   position: absolute;
   width: 1px;
 }
+
