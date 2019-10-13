@@ -1,3 +1,7 @@
+html, body{
+  height: 100%;
+}
+
 /*navbar*/
 nav{
     background-color: #bdd9dc33;
@@ -30,8 +34,14 @@ section:nth-of-type(4) {
 }
 
 /*about section*/
+.row-intro{
+    margin-top: 40px;
+}
 .intro{
-    font-size: 16px;
+    font-size: 18px;
+}
+.hello{
+    font-size: 2.5rem;
 }
 /*progress bars*/
 .progress-section {
@@ -227,4 +237,15 @@ section:nth-of-type(4) {
         border-radius: 50%;
     }
 
+}
+
+/*media queries*/
+@media (max-width: 600px) {
+  .valign-wrapper{
+    display: block;
+  }
+  .about-image{
+      width: 60vw;
+      height: 50vh;
+  }
 }
