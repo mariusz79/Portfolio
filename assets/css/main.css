@@ -187,7 +187,7 @@ strong::after {
     right: -0.5rem;
     height: 0.75rem;
     z-index: 0;
-    background-image: url("/assets/img/underline.png");
+    background-image: url("assets/img/underline.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -350,7 +350,7 @@ border-radius: 0 30px;
 .blob::before{
   content: "";
     position: absolute;
-    background: url("/assets/img/blob.svg");
+    background: url("assets/img/blob.svg");
     width: 250px;
     height: 140px;
     left: -22px;
