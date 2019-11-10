@@ -151,6 +151,24 @@ section:nth-of-type(7) {
 
 
 /*about section*/
+#about{
+  position: relative;
+}
+#about::before{
+  content: '';
+  background: url('https://mariusz-ecommerce.s3-eu-west-1.amazonaws.com/static/img/4.png');
+  background-repeat: no-repeat;
+  position: absolute;
+    bottom: -20%;
+    left: 60%;
+    width: 100%;
+    height: 100%;
+z-index: -1;
+opacity: .4;
+-webkit-animation: shake-vertical 15s ease-in-out infinite alternate both;
+	        animation: shake-vertical 15s ease-in-out infinite alternate both;
+}
+
 .build{
     height: 9rem;
 }
@@ -179,18 +197,7 @@ mark{
 strong {
   position: relative;
 }
-strong::after {
-    content: '';
-    position: absolute;
-    bottom: -0.125rem;
-    left: -0.5rem;
-    right: -0.5rem;
-    height: 0.75rem;
-    z-index: 0;
-    background-image: url("https://mariusz-ecommerce.s3-eu-west-1.amazonaws.com/static/img/underline.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+
 
 p > strong {
   font-weight: 400;  
@@ -826,7 +833,7 @@ form .active{
   top: 0;
   height: 100%;
   width: 51%;
-  background: #ffd829;
+  background: #6155CF;
 }
 
 .chevron:before {
@@ -869,24 +876,7 @@ form .active{
 
 
 
-#about{
-  position: relative;
-  overflow: hidden;
-}
-#about::before{
-  content: '';
-  background: url('https://mariusz-ecommerce.s3-eu-west-1.amazonaws.com/static/img/4.png');
-  background-repeat: no-repeat;
-  position: absolute;
-    bottom: -25%;
-    left: 60%;
-    width: 100%;
-    height: 100%;
-z-index: -1;
-opacity: .4;
--webkit-animation: shake-vertical 15s ease-in-out infinite alternate both;
-	        animation: shake-vertical 15s ease-in-out infinite alternate both;
-}
+
 
 /*media queries*/
 @media (max-width: 600px) {
@@ -1175,3 +1165,88 @@ p{
 }
 
 
+.loader  {
+  animation: rotate 1s infinite;  
+  height: 100px;
+  width: 100px;
+  position: absolute;
+top: 48%;
+left: 48%;
+}
+
+.loader:before,
+.loader:after {   
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 40px;  
+  width: 40px;
+}
+.loader:before {
+  animation: ball1 1s infinite;  
+  background-color: #6155CF;
+  box-shadow: 30px 0 0 #6155CF;
+  margin-bottom: 10px;
+}
+.loader:after {
+  animation: ball2 1s infinite; 
+  background-color: #6155CF;
+  box-shadow: 30px 0 0 #6155CF;
+}
+
+@keyframes rotate {
+  0% { 
+    -webkit-transform: rotate(0deg) scale(0.8); 
+    -moz-transform: rotate(0deg) scale(0.8);
+  }
+  50% { 
+    -webkit-transform: rotate(360deg) scale(1.2); 
+    -moz-transform: rotate(360deg) scale(1.2);
+  }
+  100% { 
+    -webkit-transform: rotate(720deg) scale(0.8); 
+    -moz-transform: rotate(720deg) scale(0.8);
+  }
+}
+
+@keyframes ball1 {
+  0% {
+    box-shadow: 30px 0 0 #6155CF;
+  }
+  50% {
+    box-shadow: 0 0 0 #6155CF;
+    margin-bottom: 0;
+    -webkit-transform: translate(15px,15px);
+    -moz-transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #6155CF;
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    box-shadow: 30px 0 0 #6155CF;
+  }
+  50% {
+    box-shadow: 0 0 0 #6155CF;
+    margin-top: -20px;
+    -webkit-transform: translate(15px,15px);
+    -moz-transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #6155CF;
+    margin-top: 0;
+  }
+}
+
+.spinner-wrapper {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 999999;
+background-color: rgba(241, 239, 250, 0.776)
+}

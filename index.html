@@ -12,7 +12,12 @@
     <title>Portfolio</title>
 </head>
 <body>
+
+    <div class="spinner-wrapper" >
+    <div class="loader"></div>
+    </div>
     
+   
     <!-----------------------------------Navbar---------------------------------->
     <section id="about" class="section scrollspy">
         
@@ -44,7 +49,7 @@
             <div class="row row-intro valign-wrapper">
                 <div class="col s12 m7">
                     <h3 class="hello">Hi, I am Mariusz.</h3>
-                    <p class="intro flow-text">I'm a web <strong>designer</strong>  / <mark>developer</mark> based in Cork, Ireland. <span style="white-space: nowrap">I have</span> a passion for web design and love to create for web and
+                    <p class="intro flow-text">I'm a web designer / developer based in Cork, Ireland. <span style="white-space: nowrap">I have</span> a passion for web design and love to create for web and
                         mobile devices.</p>
                 </div>
                 <div class="col s12 m5 center">
@@ -52,14 +57,16 @@
                     </div>
             </div>
 
+            <a href="#more-about">
             <div class="scroll-downs ">
             
-                <a href="#more-about">
+               
                 <div class="chevron"></div>
                 <div class="chevron"></div>
                 <div class="chevron"></div>
+                </div>
                 </a>
-            </div>
+           
             </div>
         </div>
     </section>
@@ -406,7 +413,7 @@
         </div>
     </footer>
 
-   
+
         <!--
             <ul class="circles">
                 <li></li>
@@ -429,6 +436,16 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script>
+                //Preloader
+                    $(window).on("load", function () {
+                        preloaderFadeOutTime = 2000;
+                        function hidePreloader() {
+                            var preloader = $('.spinner-wrapper');
+                            preloader.fadeOut(preloaderFadeOutTime);
+                        }
+                        hidePreloader();
+                    });
+
         var senseSpeed = 5;
             var previousScroll = 0;
             $(window).scroll(function (event) {
@@ -502,7 +519,9 @@
             $('html, body').animate({ scrollTop: 0 }, '500');
         });
 
+       
         
+          
     </script>
 </body>
 </html>
