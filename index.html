@@ -7,140 +7,153 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Fugaz+One&display=swap" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet" type="text/css">
     <title>Portfolio</title>
 </head>
 <body>
-    <!-----------------------------------Navbar---------------------------------->
     
-    <div class="menu">
+    <!-----------------------------------Navbar---------------------------------->
+    <section id="about" class="section scrollspy">
+        
+    <div class="menu padding">
       
            
                
                 <ul>
-                    <li><a href="#about" class="left active button_slide slide_down">
+                    <li id="nav1"><a href="#about" class="left active">
                         <div class="logo">
                             <span class="m">MARIUSZ</span>
-                            <span class="d">DEV</span>
+                            <span class="d">dev</span>
                         </div>
                     </a></li>
                     <li><a href="#contact" class="right button_slide slide_down">Contact</a></li>
-                    <li><a href="#work" class="right button_slide slide_down ">Work</a></li>
+                    <li><a href="#work" class="right button_slide slide_down middle-li">Work</a></li>
                     <li><a href="#skills" class="right  button_slide slide_down">Skills</a></li>
                 </ul>
+              
               
           
       
     </div>
     <!------------------------------------About section---------------------------->
-    <section id="about" class="section scrollspy">
+    
+        <div class="top">
+            
         <div class="container">
             <div class="row row-intro valign-wrapper">
-                <div class="col s12 m6">
-                    <span class="hello">Hi, I am Mariusz.</span>
-                    <p class="intro">I'm a web <strong>designer</strong>  / <mark>developer</mark> based in Cork, Ireland. I have a passion for web design and love to create for web and
+                <div class="col s12 m7">
+                    <h3 class="hello">Hi, I am Mariusz.</h3>
+                    <p class="intro flow-text">I'm a web <strong>designer</strong>  / <mark>developer</mark> based in Cork, Ireland. <span style="white-space: nowrap">I have</span> a passion for web design and love to create for web and
                         mobile devices.</p>
                 </div>
-                <div class="col s12 m6 center">
+                <div class="col s12 m5 center">
                     <img src="assets/img/do_code.png" class="responsive-img about-image" alt="about image">
                     </div>
             </div>
 
-            <div class="scroll-downs">
+            <div class="scroll-downs ">
             
-                <a href="#secondPage">
-                    <div class="mousey">
-                        <div class="scroller"></div>
-                    </div>
+                <a href="#more-about">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
                 </a>
             </div>
-            <br>
-
-            <div class="row">
-                <div class="col s12 m4 l4">
-                    <div class="row">
-                    <div class="col s2 m2 l2">
-                        <h5><i class="fas fa-question"></i></h5>
-                    </div>
-                    <div class="col s10 m10 l10">
-                        <h5>WHAT DO I DO?</h6>
-                    <p>I'm a skilled Full Stack Developer with a wealth of diverse life and technical experience that I bring to every
-                        project. </p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col s12 m4 l4">
-                    <div class="row">
-                    <div class="col s2">
-                        <h5><i class="far fa-thumbs-up"></i></h5>
-                    </div>
-                    <div class="col s10">
-                        <h5>HOW DO I DO IT?</h6>
-                            <p>I follow form as well as function. I know that the aesthetics of effective design combined with application speed,
-                            security and raliability combine to create a great user experience.</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col s12 m4 l4">
-                    <div class="row">
-                    <div class="col s2">
-                        <h5><i class="fas fa-bolt"></i></h6>
-                    </div>
-                    <div class="col s10">
-                        <h5>WHY HIRE ME?</h6>
-                            <p>I work quickly and effectively in getting things built and working across the stack. I'm an excellent
-                            communicator who
-                            thrives in bright and enthusiastic teams and I'm also a self starter when working solo.</p>
-                    </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
+            <br>
+            
+            <div id="more-about" class="row scrollspy">
+                <div class="container" style="width: 90%">
+                <div class="col s12 m12 l4 info center">
+                    <div class="center"><img src="assets/img/code_html.png" class="build"></div>
+                   
+                    
+                        <h5>WHAT DO I DO?</h5>
+                    <p class="info-text">I'm a skilled Full Stack Developer with a wealth of diverse life and technical experience that I bring to every
+                        project. </p>
+                    
+                </div>
+                   
+                
+                <div class="col s12 m14 l4 info center">
+                    <div class="center"><img src="assets/img/creative_process.png" class="build"></div>
+                    
+                    
+                        <h5>HOW DO I DO IT?</h5>
+                            <p class="info-text">I follow form as well as function. I know that the aesthetics of effective web design combined with application speed,
+                            security and reliability combine to create a great user experience.</p>
+                  
+                    
+                </div>
+                <div class="col s12 m14 l4 info center">
+                <div class="center"><img src="assets/img/rocket_launch_2.png" class="build"></div>
+                   
+                        <h5>WHY HIRE ME?</h6>
+                            <p class="info-text">I work quickly and effectively in getting things built and working across the stack. I'm an excellent
+                            communicator who
+                            thrives in bright and enthusiastic teams and I'm also a self starter when working solo.</p>
+         
+                </div>
+            </div>
+        </div>
+ 
+            <section>
+                <div class="wave">
+                    <img src="assets/img/wave5.svg">
+                </div>
+            </section>
 
     <!------------------------------------Skills section---------------------------->
     <section id="skills" class="section scrollspy">
-        <div class="container">
-            <h5 class="center-align">Skills</h5>
-            <p class="intro center">As a full stack web developer I can develop both client and server software.</p>
+        <div class="container center">
+            <h2 class=" blob">Skills</h2>
+            <p class="intro center skills">As a full stack web developer I can develop both client and server software.</p>
 
-            <div class="row">
-                <div class="col s12 m6 l6">
-                    <div class="row">
-                        <div class="col s2 m2 l2">
-                            <h5><i class="fa fa-tv" aria-hidden="true"></i></h5>
-                        </div>
-                            
-                        <div class="col s10 m10 l10">
-                            <h5 class="">FRONT END</h5>
-                         
-                            <p class="">
-                                I'm skilled in User Experience Design using the trinity of HTML/CSS/JavaScript.
+            <div class="row valign-wrapper skill-card">
+                    
+                
+                <div class=" col s12 m4">
+                    <img src="assets/img/building_website.png" class="responsive-img skill-img">
+                </div>
+
+                <div class="col s12 m8">
+                    <h5 class="skill-name" ><i class="fa fa-tv icon-shadow" aria-hidden="true"></i>&nbsp;FRONT END </h5>
+                            <p class="flow-text">
+                                I'm skilled in User Experience Design using the trinity of HTML / CSS / JavaScript.<br>
                                 I also have extensive experience in Front End Frameworks such as Bootstrap and Materialize.
                             </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l6">
-                    <div class="row">
-                        <div class="col s2 m2 l2">
-                            <h5><i class="fa fa-cogs" aria-hidden="true"></i></h5>
-                        </div>
+</div>
+                
+                
 
-                        <div class="col s10 m10 l10">
-                            <h5 class="">BACK END</h5>
+              
+            </div>
+            
+               
+            <div class="row valign-wrapper skill-card" style="margin: 4rem 0 4rem 0">
+
+                <div class="col s12 m4">
+                    <img src="assets/img/designer_1.png" class="responsive-img skill-img" >
+                </div>
+
+
+                <div class="col s12 m8">
+                        <h5 class="skill-name" ><i class="fa fa-cogs icon-shadow" aria-hidden="true"></i>&nbsp;BACK END</h5>
                     
-                            <p class="">I specialize in data-driven web-applications.
+                        <p class="flow-text">I specialize in data-driven web-applications.<br>
                                 Many of my projects utilise document-based data. I use Python and Flask/Django
                                 in conjuction with MongoDB to process and present information.
-                            </p>
-                    </div>
-                    </div>
+                        </p>
                 </div>
-            </div>
 
-            <div class="row">
+              
+            </div>
+            
+
+            <div class="row" style="margin-top: 3rem">
                 <div class="progress-section">
                     <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
@@ -182,9 +195,16 @@
         </div>
     </section>
 
+    <section>
+        <div class="wave">
+            <img src="assets/img/wave2.svg">
+        </div>
+    </section>
     <!------------------------------------Work section---------------------------->
-    <section id="work" class="section scrollspy">
-        <div class="container">
+    <section id="work" class="section scrollspy" >
+      
+        <div class="center">
+            <h2 class="blob" style="padding-bottom: 3rem">Projects</h2>
         <!-- Slideshow container -->
         <div class="slideshow-container">
         
@@ -192,42 +212,59 @@
             <div class="mySlides fade center">
                 
                 <img src="assets/img/Untitled.png" class="  responsive-img mockup" alt="mockup image">
-                <div class="text">Caption Text
+                <div class="text">Memory game</div>
                     <div class="buttons">
                     
-                        <a class="waves-effect waves-light btn">VISIT</a>
-                        <a class="waves-effect waves-light btn"><i class="far fa-file-code"></i> &nbsp;CODE</a>
+                    <a href="https://mariusz79.github.io/Second-Milestone-Project-Simon-Game/" class="one narrow" target="_blank"><i class="far fa-eye"></i>&nbsp;<span style="font-size: large">VISIT</span></a>
+                    <a href="https://github.com/mariusz79/Second-Milestone-Project-Simon-Game" class="one narrow" target="_blank"><i class="fas fa-code"></i>&nbsp;<span style="font-size: large">CODE</span> </a>
                     </div>
-                </div>
+                
             </div>
         
             <div class="mySlides fade center">
                 
                 <img src="assets/img/Untitled1.png" class=" responsive-img mockup" alt="mockup image">
-                <div class="text">Caption Text
+                <div class="text">Recipes website</div>
                     <div class="buttons">
                 
-                        <a class="waves-effect waves-light btn">VISIT</a>
-                        <a class="waves-effect waves-light btn"><i class="far fa-file-code"></i> &nbsp;CODE</a>
+                    <a href="https://recipes-flask.herokuapp.com/" class="one narrow" target="_blank"><i class="far fa-eye"></i>&nbsp;<span style="font-size: large">VISIT</span></a>
+                    <a href="https://github.com/mariusz79/Recipes-Third-Milestone-Project" class="one narrow" target="_blank"><i class="fas fa-code"></i>&nbsp;<span style="font-size: large">CODE</span> </a>
                     </div>
-                </div>
+                
             </div>
         
             <div class="mySlides fade center">
                 
                 <img src="assets/img/Untitled2.png" class=" responsive-img mockup" alt="mockup image">
-                <div class="text">Caption Text
+                <div class="text">Issue tracker</div>
                     <div class="buttons">
                 
-                        <a class="waves-effect waves-light btn"><i class="far fa-eye"></i>&nbsp;<span style="font-size: large">VISIT</span></a>
-                        <a class="waves-effect waves-light btn"><i class="fas fa-code"></i>&nbsp;<span style="font-size: large">CODE</span> </a>
+                        <a href="https://issuetracker-django.herokuapp.com/" class="one narrow" target="_blank"><i class="far fa-eye"></i>&nbsp;<span style="font-size: large">VISIT</span></a>
+                        <a href="https://github.com/mariusz79/Django-Milestone-Project" class="one narrow" target="_blank"><i class="fas fa-code"></i>&nbsp;<span style="font-size: large">CODE</span> </a>
                     </div>
+               
+            </div>
+
+            <div class="mySlides fade center">
+            
+                <img src="assets/img/Untitled4.png" class=" responsive-img mockup" alt="mockup image">
+                <div class="text">Band webiste</div>
+                <div class="buttons">
+            
+                    <a href="https://mariusz79.github.io/First-Milestone-Project/" class="one narrow" target="_blank"><i
+                            class="far fa-eye"></i>&nbsp;<span style="font-size: large">VISIT</span></a>
+                    <a href="https://github.com/mariusz79/First-Milestone-Project" class="one narrow"
+                        target="_blank"><i class="fas fa-code"></i>&nbsp;<span style="font-size: large">CODE</span> </a>
                 </div>
+            
             </div>
         
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)"><i class="far fa-arrow-alt-circle-left"></i></a>
-            <a class="next" onclick="plusSlides(1)"><i class="far fa-arrow-alt-circle-right"></i></a>
+        <!-- Next and previous buttons -->
+        <div class="chevrons">
+        <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+        </div>
+
         </div>
         <br>
         
@@ -236,27 +273,41 @@
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
         </div>
         </div>
+        
     </section>
 
+
     <section>
-        
+        <div class="wave">
+            <img src="assets/img/wave1.svg">
+        </div>
     </section>
     <!------------------------------------Contact section---------------------------->
     <section id="contact" class="section scrollspy">
-        <div class="container center">
-            <h5>Have project in mind?</h5>
-            <p>I am currently available for freelance work.
+        <div class="container center" style="width: 90%"">
+            <h2 class="blob">Contact</h2>
+            <h5>Have a project in mind?</h5>
+            <p class="center" style="font-size: 22px">I am currently available for freelance work.
             I would love to hear from you!</p>
+            
             
              
             <!-----------------contact form---------------->
-            <div class="row valign-wrapper">
+            <div class="card contact" style="margin-bottom: 3rem">
+            <div class="row">
+                <p class="center message">Send me a message</p>
+            </div>
+            <div class="row valign-wrapper" >
+                
+
+                
                 <div class="col s12 m5 l6">
                     <img src="assets/img/message.png" alt="message picture" class="responsive-img">
                 </div>
-                <div class="col s12 m5 l6 form-container">
+                <div class="col s12 m7 l6 form-container">
                     <form action="https://submit-form.com/8Gn597jyo2ZM-oHVqGcy7" target="_self">
                         <!-- All elements must have a name attribute -->
                     
@@ -278,20 +329,85 @@
                         </div>
                     
                         <!-- A button of type submit -->
-                        <button type="submit" class="btn btn-primary contact-button"><i class="far fa-paper-plane"></i>&nbsp; GET IN TOUCH</button>
+                        
+                        <button type="submit" class="one contact-button"><i class="far fa-paper-plane"></i>&nbsp; GET IN TOUCH</button>
+                        
+                            
                     </form>
                 </div>
                 </div>
+                </div>
+                
+                
+
+<div class="row">
+    <div class="col s12 m4">
+        <div class="card contact" style="margin-top: 0">
+<div><i class="far fa-envelope contact-icon"></i></div>
+<div>
+    <h5 class="contact-text">mpawlowic@gmail.com</h5>
+</div>
+        </div>
+    </div>
+    <div class="col s12 m4">
+        <div class="card contact" style="margin-top: 0">
+            <div><i class="fab fa-whatsapp contact-icon"></i></div>
+        
+        <div>
+            <h5 class="contact-text">+353 87 78 134 38</h5>
+        </div>
+        </div>
+    </div>
+    <div class="col s12 m4">
+        <div class="card contact" style="margin-top: 0">
+            <div><i class="fas fa-map-marker contact-icon"></i></div>
+        
+            <div>
+                <h5 class="contact-text">Cork, Ireland</h5>
+            </div>
+            </div>
+    </div>
+</div>
+
+
+
         </div>
     </section>
 
-        <footer>
-            <div class="contact-info"><i class="far fa-envelope"></i> mpawlowic@gmail.com</div>
-            <div class="contact-info"><i class="fab fa-whatsapp"></i> 087 78 134 38</div>
-            <div class="contact-info"><a href="https://github.com/mariusz79"><i class="fab fa-github"></i></a></div>
-            <div class="contact-info"><a href="www.linkedin.com/in/mariusz-pawlowicz"><i class="fab fa-linkedin"></i></a></div>
-        </footer>
-        
+    <section style="background-color: aliceblue">
+    <div class="wave" style="background-color: aliceblue">
+        <img src="assets/img/wave.svg">
+    </div>
+
+</section>
+
+    <footer class="page-footer">
+        <div class="container" style="width: 90%">
+            <div class="row">
+                <div class="col">
+                    <h5 class="white-text">Find me on:</h5>
+                    <span ><a href="https://github.com/mariusz79"><i class="fab fa-github up"></i></a>
+                    </span> <span style="margin-left: 4vw"><a href="www.linkedin.com/in/mariusz-pawlowicz/"><i
+                                class="fab fa-linkedin up"></i></a></span>
+                </div>
+                <div class="col right">
+                    <h5 class="white-text" style="margin-left: 6px">Top</h5>
+            <span id="nav1"><a href="#about"><i class="far fa-arrow-alt-circle-up up"></i></a></span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center">
+                    <p> ©
+                        <!-- -->2019
+                        <!-- --> Mariusz Pawlowicz. All rights reserved</p>
+               
+            </div>
+        </div>
+    </footer>
+
+   
+        <!--
             <ul class="circles">
                 <li></li>
                 <li></li>
@@ -307,24 +423,40 @@
                 <li></li>
                 <li></li>
             </ul>
-        
+        -->
 
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script>
+        var senseSpeed = 5;
+            var previousScroll = 0;
+            $(window).scroll(function (event) {
+                var scroller = $(this).scrollTop();
+                if (scroller - senseSpeed > previousScroll) {
+                    $("div.scroll-downs").filter(':not(:animated)').slideUp();
+                } else if (scroller + senseSpeed < previousScroll) {
+                    $("div.scroll-downs").filter(':not(:animated)').slideDown();
+                }
+                previousScroll = scroller;
+            });
         $(document).ready(function () { 
-            $('.button-collapse').sideNav({
-                menuWidth: 300,
-                closeOnClick: true,
-                edge: 'right', 
+
+            if ($(".menu li a").hasClass('active') && $(".menu li a").hasClass('left')) {
+                $("#nav1 a").css('background-color', 'transparent');
             }
-            );
+
 
 
             $('.scrollspy').scrollSpy();
 
-          
+             $(".slideshow-container").mouseover(function () {
+                $(".chevrons").show();
+            });
+            $(".slideshow-container").mouseout(function () {
+                $(".chevrons").hide();
+            });
+        
            
         });
     var slideIndex = 1;
@@ -354,7 +486,23 @@
         }
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
-    }
+    };
+    
+    $(window).scroll(function () {
+            // checks if window is scrolled more than 500px, adds/removes solid class
+            if ($(this).scrollTop() > 20) {
+                $('.menu').addClass('solid').removeClass('padding');
+            } else {
+                $('.menu').removeClass('solid').addClass('padding');
+            }
+        });
+
+      $('#nav1').on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '500');
+        });
+
+        
     </script>
 </body>
 </html>
