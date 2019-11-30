@@ -11,18 +11,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet" type="text/css">
     <title>Website Design Solutions Cork Ireland | Full Stack Web Developer Designer Freelancer | Website Creation | Build Website</title>
-    <meta name="description" content="Website designer / developer. Need a new website or to rebuild an old one?
+    <meta name="description" content="Website designer / developer Cork Ireland. Need a new website or to rebuild an old one?
             Need an web application? Want to improve an online presence? I can help. Click for more.">
     <link rel="canonical" href="https://designwebsolutions.com/" />
     <meta name="robots" content="index, follow">
 </head>
 <body>
 
-    <div class="spinner-wrapper" >
-    <div class="loader"></div>
-    </div>
-    
-   
     <!-----------------------------------Navbar---------------------------------->
     <section id="about" class="section scrollspy">
         
@@ -328,20 +323,20 @@
                 <div class="col s12 m7 l6 form-container">
                     <form action="https://submit-form.com/8Gn597jyo2ZM-oHVqGcy7" target="_self">
                         <!-- All elements must have a name attribute -->
-                    
+                        <input type="hidden" name="_redirect" value="https://designwebsolutions.com/thanks.html"/>
                     
                         <div class="input-field col s12">
-                            <input id="name" type="text" class="validate" required>
+                            <input id="name" name="name" type="text" class="validate" required>
                             <label for="first_name">Name</label>
                         </div>
                     
                         <div class="input-field col s12">
-                            <input id="email" type="email" class="validate" required>
+                            <input id="email" name="email" type="email" class="validate" required>
                             <label for="email">Email</label>
                         </div>
                     
                         <div class="input-field col s12">
-                            <textarea id="textarea1" class="materialize-textarea" required></textarea>
+                            <textarea id="textarea1" name="content" class="materialize-textarea" required></textarea>
                             <label for="textarea1">Project description</label>
                     
                         </div>
@@ -427,40 +422,11 @@
         </div>
     </footer>
 
-
-        <!--
-            <ul class="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-
-
-      
-            <ul class="squares">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        -->
-
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-                //Preloader
-                    $(window).on("load", function () {
-                        preloaderFadeOutTime = 1500;
-                        function hidePreloader() {
-                            var preloader = $('.spinner-wrapper');
-                            preloader.fadeOut(preloaderFadeOutTime);
-                        }
-                        hidePreloader();
-                    });
-
 
         $(document).ready(function () { 
 
