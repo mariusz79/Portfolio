@@ -456,9 +456,9 @@ border-radius: 0 30px;
     height: 20px;
 }
 .buttons{
-    margin-top: 2rem;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 .narrow{
     margin-left: 5px;
