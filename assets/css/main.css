@@ -545,7 +545,7 @@ p>strong::after {
 /*footer*/
 
 .page-footer {
-    background-color: rgba(64, 52, 235, 0.72);
+    background-color: rgb(117 109 241);
 }
 
 .contact-icon {
@@ -1229,4 +1229,8 @@ animation bounce-top
         animation-timing-function: ease-out;
         opacity: 1;
     }
+}
+img.responsive-img {
+    max-width: 700px;
+    width: 100%;
 }
