@@ -1230,7 +1230,7 @@ animation bounce-top
         opacity: 1;
     }
 }
-img.responsive-img {
-    max-width: 700px;
-    width: 100%;
+.mockup {
+    max-width: 700px !important;
+    width: 100% !important;
 }
